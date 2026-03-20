@@ -22,10 +22,14 @@ A simple project to visualize graph/network data in an interactive **3D force-di
 
 ---
 
-<!-- ## Project Structure
+## Project Structure
 
 3d-force-graph/
-├── index.html        # Main HTML file  
-├── script.js         # Graph logic  
-├── style.css         # Styling (optional)  
-└── data.json         # Graph data (nodes & links) -->
+├── src
+    └── main.js         # Graph logic  
+    └── style.css         # Styling 
+├── index.html        # Main HTML file   
+└── graph.json         # Graph data (nodes & links)
+
+## Command To Run
+`npm run dev`
