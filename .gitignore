@@ -9,6 +9,10 @@ lerna-debug.log*
 
 node_modules
 public/images/ip
+public/cifar_subset
+public/
+config.js
+vid.mp4
 dist
 dist-ssr
 *.local

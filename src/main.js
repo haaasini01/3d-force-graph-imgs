@@ -1,7 +1,8 @@
 import ForceGraph3D from "3d-force-graph";
 import * as THREE from "three";
+import { GRAPH_PATH, IMAGE_PATH } from "./config.js";
 
-fetch("/graph.json")
+fetch(GRAPH_PATH)
   .then(res => res.json())
   .then(data => {
 
@@ -12,7 +13,7 @@ fetch("/graph.json")
       .nodeThreeObject(node => {
 
         const texture = new THREE.TextureLoader().load(
-          `/images/ip/${node.id}`
+          `${IMAGE_PATH}/${node.id}`
         );
 
         texture.colorSpace = THREE.SRGBColorSpace;
@@ -27,19 +28,8 @@ fetch("/graph.json")
         return new THREE.Mesh(geometry, material);
       })
 
-      .nodeThreeObjectExtend(false)
       .onNodeClick(node => {
-        window.open(`/images/ip/${node.id}`, "_blank");
-      })
-      .linkWidth(1)
-      .linkOpacity(0.15)
-      .backgroundColor("#000011")
-      .nodePositionUpdate((obj, coords) => {
-        Object.assign(obj.position, coords);
-        obj.lookAt(Graph.camera().position);
+        window.open(`${IMAGE_PATH}/${node.id}`, "_blank");
       });
-
-    Graph.d3Force("charge").strength(-120);
-    Graph.d3Force("link").distance(80);
 
   });
