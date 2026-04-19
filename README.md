@@ -5,6 +5,20 @@ A lightweight Vite-powered demo that renders a 3D force-directed graph using `3d
 The application loads graph data from a JSON file and maps node IDs to image textures, then displays an interactive 3D network in the browser.
 
 ---
+## Demo
+
+A short walkthrough of the interactive 3D force-directed graph visualization:
+
+**Video Demo:**  
+https://drive.google.com/file/d/1CnhLauD9iWcS5xIiKMMmq0nhBw7TXMRF/view?usp=sharing
+
+> The demo showcases:
+> - Rendering of the 3D force-directed graph  
+> - Image-textured nodes representing CIFAR-10 samples  
+> - Emergent clustering behavior in the layout  
+> - Interactive exploration (zoom, rotate, node click navigation)
+
+---
 
 ## Graph Construction & Data Processing
 
@@ -117,20 +131,7 @@ Balanced clusters emerge clearly in the 3D force-directed layout.
 ---
 
 
-## Demo
 
-A short walkthrough of the interactive 3D force-directed graph visualization:
-
-**Video Demo:**  
-https://drive.google.com/file/d/1CnhLauD9iWcS5xIiKMMmq0nhBw7TXMRF/view?usp=sharing
-
-> The demo showcases:
-> - Rendering of the 3D force-directed graph  
-> - Image-textured nodes representing CIFAR-10 samples  
-> - Emergent clustering behavior in the layout  
-> - Interactive exploration (zoom, rotate, node click navigation)
-
----
 
 ## Setup
 
